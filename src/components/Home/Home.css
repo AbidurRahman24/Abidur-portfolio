@@ -1,0 +1,26 @@
+img{
+    height:100%;
+    width: 100%;
+}
+.theme-color{
+    color: #037fff;
+}
+.mi-button {
+    position: relative;
+    padding: 0 30px;
+    background: #037fff;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    height: 50px;
+    line-height: 50px;
+    transition: all .4s ease-out;
+}
+.mi-button:hover{
+    color:#fff
+}
