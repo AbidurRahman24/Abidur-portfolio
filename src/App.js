@@ -10,6 +10,7 @@ import {
 import About from './components/About/About';
 import NoMatch from './components/NoMatch/NoMatch';
 import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path='/resume'>
             <Resume></Resume>
+          </Route>
+          <Route path='/contact'>
+            <Contact></Contact>
           </Route>
           <Route path='*'>
             <NoMatch></NoMatch>
