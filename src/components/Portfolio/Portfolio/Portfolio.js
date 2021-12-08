@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import PortfolioDetails from '../PortfolioDetails/PortfolioDetails';
 import './Portfolio.css'
 import doctor from '../img/doctorsPortal.png'
@@ -64,7 +64,7 @@ const Project = [
 
 const Portfolio = () => {
 
-    const [project, setProject] =  useState(Project);
+    const [project, setProject] = useState(Project);
 
     const filterItem = catagoryItem => {
         const updateProject = Project.filter((curElem) => {
@@ -76,7 +76,6 @@ const Portfolio = () => {
     return (
         <>
             <div className="container">
-
                 <div className="text-center mt-4">
                     <h2>PROJECT</h2>
                     <hr />

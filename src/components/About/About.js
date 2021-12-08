@@ -5,16 +5,17 @@ import cv from '../../Images/Resume.pdf'
 
 const About = () => {
     return (
-        <div>
+        <>
             <div className="container">
-                <div className="about-section-title ">
-                    <h2>About</h2>
+                <div className="text-center mt-4">
+                    <h2>ABOUT</h2>
+                    <hr />
                 </div>
                 <div className="row">
-                    <div className="col-md-5 about-section-image">
+                    <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 about-section-image">
                         <img src={aboutImage} alt="" />
                     </div>
-                    <div className="col-md-7 about-content">
+                    <div className="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 about-content">
                         <div>
                             <h3 className='header-text'>Hi, I am <span className='theme-color'> Devid Chester </span></h3>
                             <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
@@ -30,7 +31,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

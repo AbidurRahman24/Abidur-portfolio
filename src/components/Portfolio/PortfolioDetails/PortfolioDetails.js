@@ -4,7 +4,7 @@ import './PortfolioDetails.css'
 const PortfolioDetails = (props) => {
     const { img, title, url } = props.data
     return (
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div className="row p-3">
                 <div class="card" style={{ width: '18rem' }}>
                     <img class="card-img-top" src={img} alt="" />

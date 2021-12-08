@@ -24,10 +24,13 @@ const Contact = () => {
     return (
         <div>
             <div className="container">
+                <div className="text-center mt-4">
+                    <h2>CONTACT</h2>
+                    <hr />
+                </div>
             {msg && <p className='text-success'>"Successfully send your Email."</p>}
                     {err && <p>"Error"</p>}
                 <section class="mb-4">
-                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
                     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                         a matter of hours to help you.</p>
                     <div class="row">
