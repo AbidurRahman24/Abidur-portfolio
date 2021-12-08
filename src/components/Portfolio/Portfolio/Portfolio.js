@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PortfolioDetails from '../PortfolioDetails/PortfolioDetails';
 import './Portfolio.css'
 import doctor from '../img/doctorsPortal.png'
@@ -56,31 +56,41 @@ const Project = [
         id: 7,
         url: 'https://super-shop-3751d.web.app/',
         title: 'SUPER SHOP',
-        catagory: 'FULL STACK',
+        catagory: 'MERN',
         img: shop
     },
 ]
 
+
 const Portfolio = () => {
+
+    const [project, setProject] =  useState(Project);
+
+    const filterItem = catagoryItem => {
+        const updateProject = Project.filter((curElem) => {
+            return curElem.catagory === catagoryItem
+        })
+        setProject(updateProject)
+    }
+
     return (
         <>
             <div className="container">
+
+                <div className="text-center mt-4">
+                    <h2>PROJECT</h2>
+                    <hr />
+                </div>
+                <div className="project-btn d-flex justify-content-center m-3">
+                    <button className="m-2 p-2 btn btn-warning" onClick={() => setProject(Project)}>ALL</button>
+                    <button className="m-2 p-2 btn btn-warning" onClick={() => filterItem('REACT')}>FRONT END</button>
+                    <button className="m-2 p-2 btn btn-warning" onClick={() => filterItem('MERN')}>FULL STACK</button>
+                    <button className="m-2 p-2 btn btn-warning" onClick={() => filterItem('JAVASCRIPT')}> JAVASCRIPT</button>
+                </div>
                 <div className="row ">
-                    <div className="text-center mt-4">
-                        <h2>PROJECT</h2>
-                        <hr />
-                    </div>
-                    <div className="project-btn d-flex justify-content-center m-3">
-                        <button className="m-2 p-2 btn btn-warning" >ALL</button>
-                        <button className="m-2 p-2 btn btn-warning">FRONT END</button>
-                        <button className="m-2 p-2 btn btn-warning">FULL STACK</button>
-                        <button className="m-2 p-2 btn btn-warning">JAVASCRIPT</button>
-                    </div>
-                    <div className="row">
                     {
-                        Project.map(data => <PortfolioDetails key={data.id} data={data}></PortfolioDetails>)
+                        project.map(data => <PortfolioDetails key={data.id} data={data}></PortfolioDetails>)
                     }
-                    </div>
                 </div>
             </div>
         </>
