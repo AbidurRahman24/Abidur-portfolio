@@ -17,11 +17,13 @@ const About = () => {
                     </div>
                     <div className="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 about-content">
                         <div>
-                            <h3 className='header-text'>Hi, I am <span className='theme-color'> Devid Chester </span></h3>
-                            <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
+                            <h3 className='header-text'>Hi, I am <span className='theme-color'> Abidur Rahman </span></h3>
+                            <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
+                           </p>
+                           <p> I am expert in React, Next.js, Node.js and ExpressJS.</p>
                             <ul>
-                                <li><b>Full Name </b>  Devid Chester</li>
-                                <li><b>Nationality </b> American</li>
+                                <li><b>Full Name </b>  Abidur Rahman Niloy</li>
+                                <li><b>Nationality </b> Bangladeshi</li>
                                 <li><b>Languages </b> Bangla (Native), English</li>
                                 <li><b>Address </b> Sylhet, Bangladesh</li>
                                 <li><b>Freelance </b> Available</li>

@@ -5,7 +5,7 @@ import {BsWhatsapp, BsFillEnvelopeFill, BsPinMap } from "react-icons/bs";
 
 const ContactInfo = () => {
     return (
-        <div>
+        <div>0
             <ul class="list-unstyled mb-0">
                 <li>
                     <div className="contact-infoblock">
@@ -41,7 +41,7 @@ const ContactInfo = () => {
                                 <BsPinMap />
                             </div>
                             <div className="contact-info-grid col-md-9 m-0 p-0">
-                                <h5>Phone</h5>
+                                <h5>Address</h5>
                                 <p>Sylhet, Bangladesh</p>
                             </div>
                         </div>
