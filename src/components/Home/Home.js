@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="container ">
             <div className="row">
-                <div className="bg col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-self-center" style={{ height:'400px'}}>
+                <div className="bg col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                     <img className='m-5' src={headerPhoto} alt=""  />
                 </div>
                 <div className="bg col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-self-center">

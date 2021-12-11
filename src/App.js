@@ -15,10 +15,11 @@ import Portfolio from './components/Portfolio/Portfolio/Portfolio';
 
 
 function App() {
+  
   return (
     <div className='App-header'>
       <Router>
-        <Header/>
+        <Header />
         <Switch>
           <Route exact path='/'>
             <Home></Home>

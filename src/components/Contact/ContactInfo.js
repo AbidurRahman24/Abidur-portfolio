@@ -5,7 +5,7 @@ import {BsWhatsapp, BsFillEnvelopeFill, BsPinMap } from "react-icons/bs";
 
 const ContactInfo = () => {
     return (
-        <div>0
+        <div>
             <ul class="list-unstyled mb-0">
                 <li>
                     <div className="contact-infoblock">
