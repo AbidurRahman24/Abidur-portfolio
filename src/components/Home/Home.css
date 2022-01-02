@@ -27,6 +27,6 @@ img{
 h1{
     font-size: 700;
 }
-p{
-    font-size: 1.25rem;
+.portfolio-paragrap{
+    font-size: 18px;
 }
